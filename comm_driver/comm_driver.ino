@@ -75,7 +75,7 @@ void loop() {
       diff = diff >> 0x1;
     }
   }
-  float error_rate = counter / 16.0 / RING_SIZE;
+  float error_rate = counter / (sizeof(int) + 0.0) / RING_SIZE;
   Serial.println(error_rate);
 
   // best
